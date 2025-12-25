@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA00000001000000000001BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000001000000000001SF /* AppDelegate.swift */; };
+		AA00000002000000000002BF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000002000000000002SF /* GameViewController.swift */; };
+		AA00000003000000000003BF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000003000000000003SF /* GameScene.swift */; };
+		AA00000004000000000004BF /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000004000000000004SF /* GameState.swift */; };
+		AA00000005000000000005BF /* GameMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000005000000000005SF /* GameMap.swift */; };
+		AA00000006000000000006BF /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000006000000000006SF /* GameConstants.swift */; };
+		AA00000007000000000007BF /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000007000000000007SF /* Units.swift */; };
+		AA00000008000000000008BF /* PlayerBuildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000008000000000008SF /* PlayerBuildings.swift */; };
+		AA00000009000000000009BF /* MapObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000009000000000009SF /* MapObjects.swift */; };
+		AA00000010000000000010BF /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000010000000000010SF /* TitleScene.swift */; };
+		AA00000011000000000011BF /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000011000000000011SF /* MainMenuScene.swift */; };
+		AA00000012000000000012BF /* NewGameMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000012000000000012SF /* NewGameMenuScene.swift */; };
+		AA00000013000000000013BF /* CreditsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000013000000000013SF /* CreditsScene.swift */; };
+		AA00000020000000000020RF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA00000020000000000020AF /* Assets.xcassets */; };
+		AA00000021000000000021RF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA00000021000000000021VG /* LaunchScreen.storyboard */; };
+		AA00000022000000000022RF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA00000022000000000022VG /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA00000000000000000000PD /* ShatteredColony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShatteredColony.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA00000001000000000001SF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA00000002000000000002SF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		AA00000003000000000003SF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		AA00000004000000000004SF /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		AA00000005000000000005SF /* GameMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMap.swift; sourceTree = "<group>"; };
+		AA00000006000000000006SF /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
+		AA00000007000000000007SF /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		AA00000008000000000008SF /* PlayerBuildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBuildings.swift; sourceTree = "<group>"; };
+		AA00000009000000000009SF /* MapObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObjects.swift; sourceTree = "<group>"; };
+		AA00000010000000000010SF /* TitleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
+		AA00000011000000000011SF /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		AA00000012000000000012SF /* NewGameMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameMenuScene.swift; sourceTree = "<group>"; };
+		AA00000013000000000013SF /* CreditsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsScene.swift; sourceTree = "<group>"; };
+		AA00000020000000000020AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA00000021000000000021LF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA00000022000000000022MF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA00000030000000000030IF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA00000000000000000000FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA00000000000000000000G1 = {
+			isa = PBXGroup;
+			children = (
+				AA00000000000000000000G2 /* ShatteredColony */,
+				AA00000000000000000000G3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA00000000000000000000G2 /* ShatteredColony */ = {
+			isa = PBXGroup;
+			children = (
+				AA00000001000000000001SF /* AppDelegate.swift */,
+				AA00000002000000000002SF /* GameViewController.swift */,
+				AA00000003000000000003SF /* GameScene.swift */,
+				AA00000004000000000004SF /* GameState.swift */,
+				AA00000005000000000005SF /* GameMap.swift */,
+				AA00000006000000000006SF /* GameConstants.swift */,
+				AA00000007000000000007SF /* Units.swift */,
+				AA00000008000000000008SF /* PlayerBuildings.swift */,
+				AA00000009000000000009SF /* MapObjects.swift */,
+				AA00000010000000000010SF /* TitleScene.swift */,
+				AA00000011000000000011SF /* MainMenuScene.swift */,
+				AA00000012000000000012SF /* NewGameMenuScene.swift */,
+				AA00000013000000000013SF /* CreditsScene.swift */,
+				AA00000020000000000020AF /* Assets.xcassets */,
+				AA00000021000000000021VG /* LaunchScreen.storyboard */,
+				AA00000022000000000022VG /* Main.storyboard */,
+				AA00000030000000000030IF /* Info.plist */,
+			);
+			path = ShatteredColony;
+			sourceTree = "<group>";
+		};
+		AA00000000000000000000G3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA00000000000000000000PD /* ShatteredColony.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TF0001AA0001AA00 /* ShatteredColony */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00000000000000000000C1 /* Build configuration list for PBXNativeTarget "ShatteredColony" */;
+			buildPhases = (
+				AA00000000000000000000SP /* Sources */,
+				AA00000000000000000000FF /* Frameworks */,
+				AA00000000000000000000RP /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShatteredColony;
+			productName = ShatteredColony;
+			productReference = AA00000000000000000000PD /* ShatteredColony.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA00000000000000000000PR /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					TF0001AA0001AA00 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA00000000000000000000C2 /* Build configuration list for PBXProject "ShatteredColony" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA00000000000000000000G1;
+			productRefGroup = AA00000000000000000000G3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TF0001AA0001AA00 /* ShatteredColony */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA00000000000000000000RP /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00000020000000000020RF /* Assets.xcassets in Resources */,
+				AA00000021000000000021RF /* LaunchScreen.storyboard in Resources */,
+				AA00000022000000000022RF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA00000000000000000000SP /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00000001000000000001BF /* AppDelegate.swift in Sources */,
+				AA00000002000000000002BF /* GameViewController.swift in Sources */,
+				AA00000003000000000003BF /* GameScene.swift in Sources */,
+				AA00000004000000000004BF /* GameState.swift in Sources */,
+				AA00000005000000000005BF /* GameMap.swift in Sources */,
+				AA00000006000000000006BF /* GameConstants.swift in Sources */,
+				AA00000007000000000007BF /* Units.swift in Sources */,
+				AA00000008000000000008BF /* PlayerBuildings.swift in Sources */,
+				AA00000009000000000009BF /* MapObjects.swift in Sources */,
+				AA00000010000000000010BF /* TitleScene.swift in Sources */,
+				AA00000011000000000011BF /* MainMenuScene.swift in Sources */,
+				AA00000012000000000012BF /* NewGameMenuScene.swift in Sources */,
+				AA00000013000000000013BF /* CreditsScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA00000021000000000021VG /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA00000021000000000021LF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AA00000022000000000022VG /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA00000022000000000022MF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000000000000000000BD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000BR1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA0000000000000000000TD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShatteredColony/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ci.ShatteredColony;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000TR1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShatteredColony/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ci.ShatteredColony;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA00000000000000000000C1 /* Build configuration list for PBXNativeTarget "ShatteredColony" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000TD1 /* Debug */,
+				AA0000000000000000000TR1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00000000000000000000C2 /* Build configuration list for PBXProject "ShatteredColony" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000BD1 /* Debug */,
+				AA0000000000000000000BR1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA00000000000000000000PR /* Project object */;
+}
