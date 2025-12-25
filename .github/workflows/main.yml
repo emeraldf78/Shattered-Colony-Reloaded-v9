@@ -1,0 +1,63 @@
+name: Build Latest Shattered Colony
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+      
+      - name: Find and Build Latest Project
+        run: |
+          echo "=== Directory Structure ==="
+          find . -name "*.xcodeproj" -type d
+          
+          # Find the xcodeproj inside any ShatteredColony_v* folder
+          PROJ_PATH=$(find . -path "*/ShatteredColony_v*/ShatteredColony.xcodeproj" -type d | sort -V | tail -n 1)
+          
+          if [ -z "$PROJ_PATH" ]; then
+            echo "--- ERROR: NO PROJECT FOUND ---"
+            echo "Current Directory Structure:"
+            find . -maxdepth 4 -not -path '*/.*'
+            exit 1
+          fi
+          
+          echo "Targeting Project: $PROJ_PATH"
+          
+          # Get the version folder name for the output
+          VERSION_FOLDER=$(echo "$PROJ_PATH" | grep -oE "ShatteredColony_v[^/]+" | head -1)
+          VERSION_NAME=${VERSION_FOLDER:-ShatteredColony}
+          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
+          
+          # Auto-detect the Build Scheme
+          SCHEME_NAME=$(xcodebuild -list -project "$PROJ_PATH" | awk '/Schemes:/{flag=1;next} flag{print;exit}' | xargs)
+          echo "Detected Scheme: $SCHEME_NAME"
+          
+          xcodebuild clean archive \
+            -project "$PROJ_PATH" \
+            -scheme "$SCHEME_NAME" \
+            -archivePath "./build/Output.xcarchive" \
+            -sdk iphoneos \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES
+      
+      - name: Create IPA Payload
+        run: |
+          APP_PATH=$(find ./build/Output.xcarchive -name "*.app" -type d -print -quit)
+          mkdir -p Payload
+          cp -r "$APP_PATH" Payload/
+          zip -r "${{ env.VERSION_NAME }}.ipa" Payload
+      
+      - name: Upload Result
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ env.VERSION_NAME }}-IPA"
+          path: "${{ env.VERSION_NAME }}.ipa"
